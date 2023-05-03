@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Four Card Section Component</title>
+    <title>Frontend Mentor | Four card feature section</title>
+    <!-- Linking of Stylesheet -->
     <link rel="stylesheet" href="./assets/styles/index.css" />
+    <!-- Linking of FavIcon -->
     <link rel="icon" href="./assets/images/favicon-32x32.png" />
+    <!-- Linking of External Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,5 +17,102 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <!-- Main contents go here! -->
+    <main id="main" class="container">
+      <div id="topCopy">
+        <div>
+          <h1 class="light">Reliable, efficient delivery</h1>
+        </div>
+        <div>
+          <h1 class="bold">Powered by Technology</h1>
+        </div>
+      </div>
+      <div id="bottomCopy">
+        <p class="subhead">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+      <div id="cardContainer">
+        <div id="left">
+          <div class="card cyan">
+            <div class="text">
+              <h6 class="bold">Supervisor</h6>
+              <p class="regular">
+                Monitors activity to identify project roadblocks
+              </p>
+            </div>
+            <div class="icon">
+              <img
+                src="./assets/images/icon-supervisor.svg"
+                alt="icon-supervisor"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="center">
+          <div class="card red">
+            <div class="text">
+              <h6 class="bold">Team Builder</h6>
+              <p class="regular">
+                Scans our talent network to create the optimal team for your
+                project
+              </p>
+            </div>
+            <div class="icon">
+              <img
+                src="./assets/images/icon-team-builder.svg"
+                alt="icon-supervisor"
+              />
+            </div>
+          </div>
+          <div class="card orange">
+            <div class="text">
+              <h6 class="bold">Karma</h6>
+              <p class="regular">
+                Regularly evaluates our talent to ensure quality
+              </p>
+            </div>
+            <div class="icon">
+              <img src="./assets/images/icon-karma.svg" alt="icon-supervisor" />
+            </div>
+          </div>
+        </div>
+        <div id="right">
+          <div class="card blue">
+            <div class="text">
+              <h6 class="bold">Calculator</h6>
+              <p class="regular">
+                Uses data from past projects to provide better delivery
+                estimates
+              </p>
+            </div>
+            <div class="icon">
+              <img
+                src="./assets/images/icon-calculator.svg"
+                alt="icon-supervisor"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer contents go here! -->
+    <footer id="footer" class="attribution">
+      <div id="challenge">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.
+      </div>
+      <!-- <br class="xxx" /> -->
+      <div id="creator">
+        Coded by
+        <a href="https://twitter.com/JCRichLee" target="_blank"
+          >Richard Adeyele 🎉🎉🎉🚀</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>

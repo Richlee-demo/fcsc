@@ -1,7 +1,296 @@
-*{
-    margin: 0rem;
+/* Components Library Start */
+* {
+  margin: 0rem;
 }
-body{
-    font-family: 'Poppins', sans-serif;
-    font-size: .9375rem;
+:root {
+  /* Colors */
+  /* Primary colors */
+  --primary-color-red: hsl(0, 78%, 62%);
+  --primary-color-cyan: hsl(180, 62%, 55%);
+  --primary-color-orange: hsl(34, 97%, 64%);
+  --primary-color-blue: hsl(212, 86%, 64%);
+  /* Secondary colors */
+  --neutral-color-900: hsl(234, 12%, 34%);
+  --neutral-color-500: hsl(229, 6%, 66%);
+  --neutral-color-50: hsl(0, 0%, 98%);
+  /* Text colors */
+  --text-color: #1a1a1a;
+  /* Shadow colors */
+  --shadow: 0 0 1.5rem hsla(234, 12%, 34%, 0.205);
+
+  /* Font sizes */
+  /* Heading */
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.5rem;
+  --h3-font-size: 2rem;
+  --h4-font-size: 1.5rem;
+  --h5-font-size: 1.25rem;
+  --h6-font-size: 1rem;
+  /* Body */
+  --body-text-font-size: 1rem;
+  /* Caption */
+  --caption-font-size: 0.75rem;
+
+  /* Font weights */
+  --font-weight-light: 200;
+  --font-weight-regular: 500;
+  --font-weight-bold: 900;
+
+  /* Padding */
+  --padding-x: 0.25rem;
+  --padding-xx: 0.5rem;
+  --padding-xxx: 1rem;
+  --padding-xxxx: 1.5rem;
+  --padding-xxxxx: 2rem;
+  --padding-xxxxxx: 2.5rem;
+}
+
+/* Class definition for Body & Caption */
+.light {
+  font-weight: var(--font-weight-light);
+}
+.regular {
+  font-weight: var(--font-weight-regular);
+}
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Class definition for Headings */
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-weight-bold);
+}
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-weight-bold);
+}
+h3 {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-weight-regular);
+}
+h4 {
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-weight-bold);
+}
+h5 {
+  font-size: var(--h5-font-size);
+  font-weight: var(--font-weight-regular);
+}
+h6 {
+  font-size: var(--h6-font-size);
+  font-weight: var(--font-weight-bold);
+}
+.x {
+  padding-top: var(--padding-x);
+}
+.xx {
+  padding-top: var(--padding-xx);
+}
+.xxx {
+  padding-top: var(--padding-xxx);
+}
+.xxxx {
+  padding-top: var(--padding-xxxx);
+}
+.xxxxx {
+  padding-top: var(--padding-xxxxx);
+}
+.xxxxxx {
+  padding-top: var(--padding-xxxxxx);
+}
+/* Desktop view */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--body-text-font-size);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: scroll;
+}
+/* Main */
+#topCopy > div,
+#bottomCopy > p {
+  text-align: center;
+}
+#bottomCopy {
+  margin-top: var(--padding-xxx);
+}
+#cardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  gap: var(--padding-xxxx);
+  padding-top: var(--padding-xxxxxx);
+  padding-bottom: (var(--padding-xxxxxx));
+}
+
+#center,
+#right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.card {
+    min-width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: var(--padding-xxx);
+  border-top: 4px solid var(--primary-color-blue);
+  border-radius: var(--padding-x);
+  box-shadow: var(--shadow);
+}
+p {
+  opacity: 48%;
+}
+.text{
+    max-width: 30vw;
+}
+.cyan {
+  border-color: var(--primary-color-cyan);
+}
+.red {
+  border-color: var(--primary-color-red);
+}
+.orange {
+  border-color: var(--primary-color-orange);
+}
+.blue {
+  border-color: var(--primary-color-blue);
+}
+.icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.icon > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: var(--padding-x);
+}
+/* Attribution */
+footer > div {
+  display: flex;
+  flex-direction: row;
+  gap: var(--padding-x);
+  justify-content: center;
+  padding: var(--padding-xx);
+}
+.attribution {
+  color: var(--text-color);
+  font-size: var(--h6-font-size);
+  font-weight: var(--font-weight-regular);
+  text-decoration: none;
+  text-align: center;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  cursor: auto;
+}
+.attribution a {
+  color: var(--primary-color-blue);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  float: none;
+}
+/* Mobile view */
+@media only screen and (max-width: 37.5rem) {
+  body {
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main {
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  h1 {
+    font-size: var(--h3-font-size);
+  }
+  h6 {
+    font-size: var(--h5-font-size);
+  }
+  p {
+    opacity: 64%;
+  }
+  #topCopy > div,
+  #bottomCopy > p {
+    text-align: center;
+  }
+  #bottomCopy,
+  #topCopy {
+    padding: var(--padding-xxxx);
+  }
+  #topCopy {
+    padding-bottom: 0px;
+  }
+  #bottomCopy {
+    margin-top: 0;
+    padding-top: 0px;
+  }
+  #cardContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .card {
+    min-width: 80vw;
+    border-top: 4px solid;
+    border-radius: var(--padding-x);
+    padding: var(--padding-xxxx);
+  }
+  footer,
+  .attribution {
+    background-color: var(--neutral-color-900);
+    color: var(--neutral-color-50);
+    width: 100%;
+    font-size: var(--caption-font-size);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--padding-xx);
+  }
+  footer > div {
+    padding: var(--padding-xxx);
+  }
+  .cyan {
+    border-color: var(--primary-color-cyan);
+  }
+  .red {
+    border-color: var(--primary-color-red);
+  }
+  .orange {
+    border-color: var(--primary-color-orange);
+  }
+  .blue {
+    border-color: var(--primary-color-blue);
+  }
+  .cyan:hover {
+    background-color: var(--primary-color-cyan);
+    color: var(--neutral-color-50);
+  }
+  .red:hover {
+    background-color: var(--primary-color-red);
+    color: var(--neutral-color-50);
+  }
+  .orange:hover {
+    background-color: var(--primary-color-orange);
+    color: var(--neutral-color-50);
+  }
+  .blue:hover {
+    background-color: var(--primary-color-blue);
+    color: var(--neutral-color-50);
+  }
 }
