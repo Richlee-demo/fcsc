@@ -1,4 +1,4 @@
-# Frontend Mentor - Result Summary Component
+# Frontend Mentor - Four card feature section
 
 This is a solution to the [Four card feature section on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
