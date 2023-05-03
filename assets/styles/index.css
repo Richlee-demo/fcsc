@@ -112,6 +112,10 @@ body {
   overflow-y: scroll;
 }
 /* Main */
+main {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
 #topCopy > div,
 #bottomCopy > p {
   text-align: center;
@@ -137,7 +141,7 @@ body {
   gap: 24px;
 }
 .card {
-    min-width: auto;
+  min-width: auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -149,8 +153,8 @@ body {
 p {
   opacity: 48%;
 }
-.text{
-    max-width: 30vw;
+.text {
+  max-width: 30vw;
 }
 .cyan {
   border-color: var(--primary-color-cyan);
@@ -172,6 +176,24 @@ p {
   width: 2.5rem;
   height: 2.5rem;
   padding: var(--padding-x);
+}
+
+/* Hover state */
+.cyan:hover {
+  background-color: var(--primary-color-cyan);
+  color: var(--neutral-color-50);
+}
+.red:hover {
+  background-color: var(--primary-color-red);
+  color: var(--neutral-color-50);
+}
+.orange:hover {
+  background-color: var(--primary-color-orange);
+  color: var(--neutral-color-50);
+}
+.blue:hover {
+  background-color: var(--primary-color-blue);
+  color: var(--neutral-color-50);
 }
 /* Attribution */
 footer > div {
@@ -212,8 +234,8 @@ footer > div {
   }
   main {
     margin-top: 5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
   h1 {
     font-size: var(--h3-font-size);
@@ -223,6 +245,9 @@ footer > div {
   }
   p {
     opacity: 64%;
+  }
+  .text {
+    max-width: 100%;
   }
   #topCopy > div,
   #bottomCopy > p {
@@ -242,8 +267,8 @@ footer > div {
   #cardContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
   .card {
     min-width: 80vw;
@@ -265,6 +290,8 @@ footer > div {
   footer > div {
     padding: var(--padding-xxx);
   }
+
+  /* Border color */
   .cyan {
     border-color: var(--primary-color-cyan);
   }
@@ -277,6 +304,8 @@ footer > div {
   .blue {
     border-color: var(--primary-color-blue);
   }
+
+  /* Hover state */
   .cyan:hover {
     background-color: var(--primary-color-cyan);
     color: var(--neutral-color-50);
